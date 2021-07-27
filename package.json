@@ -1,0 +1,28 @@
+{
+  "name": "js-helper",
+  "version": "0.0.1",
+  "description": "k`s javascript helper/library/utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakuilan/js-helper.git"
+  },
+  "keywords": [
+    "js",
+    "helper",
+    "library",
+    "utils"
+  ],
+  "author": "kakuilan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakuilan/js-helper/issues"
+  },
+  "homepage": "https://github.com/kakuilan/js-helper#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
