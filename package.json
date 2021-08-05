@@ -4,7 +4,7 @@
   "description": "k`s javascript helper/library/utils",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/kakuilan/js-helper#readme",
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "mocha": "^9.0.3"
   }
 }
