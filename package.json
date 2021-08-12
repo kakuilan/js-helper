@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "description": "k`s javascript helper/library/utils",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "mocha --experimental-specifier-resolution=node "
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -30,6 +35,8 @@
     "qs": "^6.10.1"
   },
   "devDependencies": {
-    "mocha": "^9.0.3"
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6"
   }
 }

@@ -1,8 +1,9 @@
 # js-helper
+
 k`s javascript helper/library/utils
 
-
 ### 依赖库
+
 ```shell
 npm i --save core-js
 npm i --save crypto-js
@@ -11,17 +12,19 @@ npm i --save qs
 ```
 
 ### 安装测试库
+
 ```shell
-# 官网 https://mochajs.org/
-npm install --save-dev mocha
-#或者
-yarn add --dev mocha
-mkdir test
+# https://jestjs.io/zh-Hans/
+npm install --save-dev jest
+
+npm install --save-dev babel-jest
+
+npm install --save-dev @babel/preset-env
 ```
 
 ### 执行测试
+
 ```shell
-./node_modules/mocha/bin/mocha
-#或者
-npm test
+yarn test
+npm run test
 ```
