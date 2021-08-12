@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "k`s javascript helper/library/utils",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --experimental-specifier-resolution=node "
   },
   "repository": {
     "type": "git",
