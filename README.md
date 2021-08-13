@@ -28,3 +28,5 @@ npm install --save-dev @babel/preset-env
 yarn test
 npm run test
 ```
+
+### 其他

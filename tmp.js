@@ -978,3 +978,19 @@ function sleep(t) {
         }
     });
 }
+
+String.fromCharCode(64)
+String.charCodeAt(0)
+var sChar=String.fromCharCode(34);
+var nCharCode="\"".charCodeAt(0);
+
+function chr( ascii ) {
+    // Converts a codepoint number to a character
+    //
+    // version: 810.114
+    // discuss at: http://phpjs.org/functions/chr
+    // +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+    // *     example 1: chr(75);
+    // *     returns 1: 'K'
+    return String.fromCharCode(ascii);
+}
