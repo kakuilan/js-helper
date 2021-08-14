@@ -1,3 +1,4 @@
+import Kcons from "../lib/constant"
 import Kencr from "../lib/encrypt"
 import Kdata from "../test/data"
 
@@ -16,6 +17,15 @@ describe('Encrypt', function () {
         let dec = Kencr.base64UrlDecode(enc)
         it('base64UrlDecode should return base64UrlEncode`s input', function () {
             assert.equal(dec, Kdata.strHello);
+        });
+    });
+
+    describe('#authcode', function () {
+        let [enc,exp] = Kencr.authcode(Kdata.strHello, Kcons.VERSION, true, Kcons.TTL_ONE_DAY)
+        let [dec,exp2] = Kencr.authcode(enc, Kcons.VERSION, false)
+        it('authcode encode/decode should be right', function () {
+            assert.equal(dec, Kdata.strHello)
+            assert.equal(exp, exp2)
         });
     });
 });

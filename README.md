@@ -11,7 +11,7 @@ npm i --save lodash
 npm i --save qs
 ```
 
-### 安装测试库
+### 测试库
 
 ```shell
 # https://jestjs.io/zh-Hans/
