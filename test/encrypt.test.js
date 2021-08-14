@@ -28,4 +28,13 @@ describe('Encrypt', function () {
             assert.equal(exp, exp2)
         });
     });
+
+    describe('#easyEncryptDecrypt', function () {
+        let enc = Kencr.easyEncrypt(Kdata.strHello, Kcons.VERSION)
+        let dec = Kencr.easyDecrypt(enc,  Kcons.VERSION)
+        it('easyEncrypt should return easyDecrypt`s input', function () {
+            assert.equal(dec, Kdata.strHello)
+        });
+    });
+
 });
