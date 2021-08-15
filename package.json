@@ -2,8 +2,10 @@
   "name": "js-helper",
   "version": "0.0.1",
   "description": "k`s javascript helper/library/utils",
-  "main": "index.js",
+  "main": "dist/js-helper.umd.js",
+  "module": "dist/js-helper.es5.js",
   "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.js",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -12,6 +14,9 @@
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kakuilan/js-helper.git"
@@ -36,8 +41,16 @@
     "url-parse": "^1.5.3"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-multi-entry": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "babel-jest": "^27.0.6",
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.2"
   }
 }

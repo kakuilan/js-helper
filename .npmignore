@@ -1,0 +1,16 @@
+examples/
+node_modules/
+coverage/
+src/
+.idea
+.project
+.settings
+.vscode
+.gitignore
+.npmignore
+babel.config.json
+jest.config.js
+rollup.config.js
+package-lock.json
+yarn.lock
+README.md
