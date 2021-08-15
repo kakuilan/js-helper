@@ -1,5 +1,5 @@
-import Kcons from "../lib/constant"
-import Kencr from "../lib/encrypt"
+import Kcons from "../src/constant"
+import Kencr from "../src/encrypt"
 import Kdata from "../test/data"
 
 var assert = require('assert');

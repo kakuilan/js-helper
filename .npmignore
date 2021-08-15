@@ -2,6 +2,7 @@ examples/
 node_modules/
 coverage/
 src/
+test/
 .idea
 .project
 .settings
@@ -11,6 +12,7 @@ src/
 babel.config.json
 jest.config.js
 rollup.config.js
+tmp.js
 package-lock.json
 yarn.lock
 README.md

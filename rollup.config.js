@@ -1,15 +1,12 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import multi from '@rollup/plugin-multi-entry';
 import babel from '@rollup/plugin-babel';
 import json from "@rollup/plugin-json";
+import {terser} from "rollup-plugin-terser";
 import pkg from "./package.json";
 
 export default {
-    input: [
-        "lib/**/*.js",
-        "lib/index.js"
-    ],
+    input: "src/index.js",
     output: [
         {
             file: pkg.main,
@@ -23,21 +20,17 @@ export default {
             sourcemap: true
         },
     ],
-    external: [],
-    watch: {
-        include: "lib/**",
-    },
     plugins: [
+        json(),
         resolve({
             browser: true,
             moduleDirectories: ['node_modules']
         }),
-        json(),
-        multi({exports: true}),
         commonjs(),
         babel({
             exclude: 'node_modules/**',
             babelHelpers: 'runtime',
         }),
+        terser()
     ],
 }

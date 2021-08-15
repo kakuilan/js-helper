@@ -34,15 +34,18 @@ npm run test
 ```
 
 ### 打包
+
 ````shell
 npm i --save-dev rimraf
 npm i --save-dev rollup
 npm i --save-dev @rollup/plugin-node-resolve
 npm i --save-dev @rollup/plugin-commonjs
 npm i --save-dev @rollup/plugin-json
-npm i --save-dev @rollup/plugin-multi-entry
 npm i --save-dev @rollup/plugin-babel
+npm i --save-dev rollup-plugin-terser
 npm i --save-dev @babel/plugin-transform-runtime
+
+yarn build
 ````
 
 ### 其他
