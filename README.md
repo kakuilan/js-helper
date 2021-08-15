@@ -58,6 +58,7 @@ npm whoami
 npm login
 
 #发布
+npm config set access public
 npm publish
 ```
 
