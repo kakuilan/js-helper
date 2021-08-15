@@ -48,4 +48,17 @@ npm i --save-dev @babel/plugin-transform-runtime
 yarn build
 ````
 
+### 发布
+
+```shell
+查看当前用户
+npm whoami
+
+#登录
+npm login
+
+#发布
+npm publish
+```
+
 ### 其他

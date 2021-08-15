@@ -1,7 +1,6 @@
 examples/
 node_modules/
 coverage/
-src/
 test/
 .idea
 .project

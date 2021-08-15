@@ -6,18 +6,18 @@ import {terser} from "rollup-plugin-terser";
 import pkg from "./package.json";
 
 export default {
-    input: "src/index.js",
+    input: "lib/index.js",
     output: [
         {
             file: pkg.main,
             name: pkg.name,
             format: "umd",
-            sourcemap: true,
+            sourcemap: false,
         },
         {
             file: pkg.module,
             format: "es",
-            sourcemap: true
+            sourcemap: false
         },
     ],
     plugins: [

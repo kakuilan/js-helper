@@ -2,8 +2,8 @@
  * @jest-environment jsdom
  */
 
-import Kcons from "../src/constant"
-import Kbrow from "../src/browser";
+import Kcons from "../lib/constant"
+import Kbrow from "../lib/browser";
 import Kdata from "../test/data"
 
 var assert = require('assert');
