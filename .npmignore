@@ -14,4 +14,4 @@ rollup.config.js
 tmp.js
 package-lock.json
 yarn.lock
-README.md
+README.cn.md
