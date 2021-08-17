@@ -2,7 +2,7 @@
 
 k`s javascript helper/library/utils
 
-### 安装
+### install
 
 ```shell
 npm i @kakuilan/js-helper
@@ -10,6 +10,6 @@ npm i @kakuilan/js-helper
 yarn add @kakuilan/js-helper
 ```
 
-### 使用
+### usage
 
-### 其他
+### other
