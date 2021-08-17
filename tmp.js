@@ -1,3 +1,5 @@
+// 127个常用的JS代码片段 https://www.toutiao.com/i6803302196621345283
+
 /**
  * 比较两个版本号（version1、version2）
  * 如果version1 > version2，返回1,
