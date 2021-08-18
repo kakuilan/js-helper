@@ -177,6 +177,24 @@ function random(lower, upper) {
     return Math.floor(Math.random() * (upper - lower + 1)) + lower;
 }
 
+
+/**
+ * 生成随机字符串
+ * @param len 字符串长度
+ */
+function randomString(len) {
+    len = len || 32;
+    var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+    /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
+    var maxPos = $chars.length;
+    var pwd = '';
+    for (var i = 0; i < len; i++) {
+        pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+    }
+    return pwd;
+}
+
+
 /**
  * 生成随机id
  * @param {Number} length 生成长度
@@ -504,22 +522,6 @@ function decryptAes(word, keyStr, ivStr) {
 
 function createCommonjsModule(fn, module) {
     return module = {exports: {}}, fn(module, module.exports), module.exports;
-}
-
-/**
- * 生成随机字符串
- * @param len 字符串长度
- */
-function randomString(len) {
-    len = len || 32;
-    var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
-    /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
-    var maxPos = $chars.length;
-    var pwd = '';
-    for (var i = 0; i < len; i++) {
-        pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
-    }
-    return pwd;
 }
 
 function repeat(string, count) {
