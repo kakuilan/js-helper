@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/kakuilan/js-helper#readme",
   "dependencies": {
+    "base64-js": "~1",
     "core-js": "~3",
     "crypto-js": "~4",
     "lodash": "~4",
