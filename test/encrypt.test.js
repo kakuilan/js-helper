@@ -10,6 +10,7 @@ describe('Encrypt', function () {
         it('md5 return 32 bit', function () {
             assert.equal(res.length, 32)
         });
+
     });
 
     describe('#base64Url', function () {
@@ -19,20 +20,27 @@ describe('Encrypt', function () {
         let e2 = Kencr.base64UrlEncode(Kdata.url04)
         let d2 = Kencr.base64UrlDecode(e2)
 
+        let e3 = Kencr.base64UrlEncode(Kdata.strTest)
+        let d3 = Kencr.base64UrlDecode(e3)
+
         it('base64UrlDecode should return base64UrlEncode`s input', function () {
             assert.equal(dec, Kdata.strHello);
 
             assert.equal(e2, 'aHR0cHM6Ly90b29sLmdvb2dsZS5jb20ubmV0L2VuY3J5cHQ_dHlwZT00SGVsbG8gV29ybGQhIOS9oOWlve-8gQ')
             assert.equal(d2, Kdata.url04)
+
+            assert.equal(e3, 'SGVsbG8gV29ybGQhIOS9oOWlve-8jOS4lueVjO-8gU9sw6Hwn5CNIFdpdGggRW1vamlzIPCfkLPwn5Oc')
+            assert.equal(d3, Kdata.strTest)
         });
     });
 
     describe('#authcode', function () {
-        let [enc, exp] = Kencr.authcode(Kdata.strHello, Kcons.VERSION, true, Kcons.TTL_ONE_DAY)
-        let [dec, exp2] = Kencr.authcode(enc, Kcons.VERSION, false)
+        let [e1, t1] = Kencr.authcode(Kdata.strHello, Kcons.VERSION, true, Kcons.TTL_ONE_DAY)
+        let [d1, t2] = Kencr.authcode(e1, Kcons.VERSION, false)
+
         it('authcode encode/decode should be right', function () {
-            assert.equal(dec, Kdata.strHello)
-            assert.equal(exp, exp2)
+            assert.equal(d1, Kdata.strHello)
+            assert.equal(t1, t2)
         });
     });
 
