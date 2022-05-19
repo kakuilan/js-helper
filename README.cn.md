@@ -54,7 +54,7 @@ yarn build
 查看npm设置
 npm config list
 恢复官方
-npm config set registry https://www.npmjs.com
+npm config set registry https://registry.npmjs.com
 
 查看当前用户
 npm whoami
