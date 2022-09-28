@@ -59,6 +59,11 @@ npm config set registry https://registry.npmjs.com
 查看当前用户
 npm whoami
 
+#设置代理
+npm config set proxy=http://127.0.0.1:7071
+#取消代理
+npm config delete proxy
+
 #登录
 npm login
 
