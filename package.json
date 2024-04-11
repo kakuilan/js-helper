@@ -1,6 +1,6 @@
 {
   "name": "@kakuilan/js-helper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "k`s javascript helper/library/utils",
   "main": "dist/js-helper.umd.js",
   "module": "dist/js-helper.es5.js",
