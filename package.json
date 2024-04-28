@@ -40,9 +40,9 @@
   "homepage": "https://github.com/kakuilan/js-helper#readme",
   "dependencies": {
     "base64-js": "~1",
-    "core-js": "~2||~3",
-    "crypto-js": "~4",
+    "core-js": "~3",
     "lodash": "~4",
+    "md5": "~2",
     "qs": "~6",
     "url-parse": "~1"
   },
