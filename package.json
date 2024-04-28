@@ -1,5 +1,6 @@
 {
   "name": "@kakuilan/js-helper",
+  "type": "module",
   "version": "0.1.2",
   "description": "k`s javascript helper/library/utils",
   "main": "dist/js-helper.umd.js",
@@ -8,11 +9,6 @@
     "build": "rimraf dist && rollup -c rollup.config.js",
     "test": "jest",
     "coverage": "jest --coverage"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.[t|j]sx?$": "babel-jest"
-    }
   },
   "files": [
     "dist",
@@ -28,6 +24,7 @@
   },
   "keywords": [
     "js",
+    "typescript",
     "helper",
     "library",
     "utils"
@@ -47,16 +44,17 @@
     "url-parse": "~1"
   },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^20.0.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "babel-jest": "^27.0.6",
-    "jest": "^27.0.6",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.56.2",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.4",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.17.0",
     "rollup-plugin-terser": "^7.0.2"
   }
 }
