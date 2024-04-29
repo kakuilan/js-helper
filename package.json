@@ -1,12 +1,11 @@
 {
   "name": "@kakuilan/js-helper",
-  "type": "module",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "k`s javascript helper/library/utils",
   "main": "dist/js-helper.umd.js",
   "module": "dist/js-helper.es5.js",
   "scripts": {
-    "build": "rimraf dist && rollup -c rollup.config.js",
+    "build": "rimraf dist && rollup -c rollup.config.js --bundleConfigAsCjs",
     "test": "jest",
     "coverage": "jest --coverage"
   },
