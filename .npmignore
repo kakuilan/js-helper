@@ -9,7 +9,7 @@ test/
 .gitignore
 .npmignore
 babel.config.json
-jest.config.js
+jest.config.cjs
 rollup.config.js
 tmp.js
 package-lock.json

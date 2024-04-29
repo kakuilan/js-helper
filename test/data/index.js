@@ -1,6 +1,7 @@
 //测试数据
 
 const strHello = "Hello World! 你好，世界！"
+const strChinese = "中文"
 const helloEng = "hello world!"
 const helloWidth = "ｈｅｌｌｏ　ｗｏｒｌｄ！"
 const strTest = "Hello World! 你好，世界！Olá🐍 With Emojis 🐳📜"
@@ -21,6 +22,7 @@ const ip01 = "192.168.31.197"
 
 export default {
     strHello,
+    strChinese,
     helloEng,
     helloWidth,
     strTest,

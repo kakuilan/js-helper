@@ -10,7 +10,10 @@ describe('Encrypt', function () {
         it('md5 return 32 bit', function () {
             assert.equal(res.length, 32)
         });
-
+        res = Kencr.md5(Kdata.strChinese)
+        it('md5 supports UTF-8 encoding', function () {
+            assert.equal(res, 'a7bac2239fcdcb3a067903d8077c4a07')
+        });
     });
 
     describe('#base64Url', function () {
