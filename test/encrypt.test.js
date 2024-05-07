@@ -6,13 +6,19 @@ var assert = require('assert');
 
 describe('Encrypt', function () {
     describe('#md5', function () {
-        let res = Kencr.md5(Kdata.strHello)
+        let r1 = Kencr.md5(Kdata.strHello)
         it('md5 return 32 bit', function () {
-            assert.equal(res.length, 32)
+            assert.equal(r1.length, 32)
         });
-        res = Kencr.md5(Kdata.strChinese)
+
+        let r2 = Kencr.md5('')
+        it('md5 empty should be work', function () {
+            assert.equal(r2, Kdata.strEmptyMd5)
+        });
+
+        let r3 = Kencr.md5(Kdata.strChinese)
         it('md5 supports UTF-8 encoding', function () {
-            assert.equal(res, 'a7bac2239fcdcb3a067903d8077c4a07')
+            assert.equal(r3, 'a7bac2239fcdcb3a067903d8077c4a07')
         });
     });
 
@@ -38,13 +44,33 @@ describe('Encrypt', function () {
     });
 
     describe('#authcode', function () {
-        let [e1, t1] = Kencr.authcode(Kdata.strHello, Kcons.VERSION, true, Kcons.TTL_ONE_DAY)
-        let [d1, t2] = Kencr.authcode(e1, Kcons.VERSION, false)
+        const key = Kdata.strEmptyMd5;
+        let [r1, t1] = Kencr.authcode(Kdata.strHello, key, true, Kcons.TTL_ONE_DAY)
+        let [d1, e1] = Kencr.authcode(r1, key, false)
 
         it('authcode encode/decode should be right', function () {
             assert.equal(d1, Kdata.strHello)
-            assert.equal(t1, t2)
+            assert.equal(t1, e1)
         });
+
+        //其他
+        const str1 = "8c9eb7905a6SdXZfm-GoJpYKu6CzMgF0I-7neF-x3UKIUpYuIZSnK_2ZqaYSZlZw0Ofzwa2Bn0QZ6b4SLzSz";
+        const str2 = "b42374af3DqX22zi207OJXsz6xP2vEXto39TPK_UzcJOdDZV0kQHPUFm5JOw-aWISFi0snglsrYtp5tpYGRuhgw50TPY8UnFSf912uZI38vGON0KHqAgCatmtdoBZ4VJI6IkHio-JLxbt8hkuCz1HCOElUkZxBMnGUle";
+        const str3 = "52a0945eK4NyxvnjEBnPlToROzO4KLKE9VvrqtxAiLPVPDK-HkvzahyMbxydmSifc3TQIo4mbsi9gzq7vbJ64YzpB_DP";
+
+        let [d2, e2] = Kencr.authcode(str1, key, false)
+        it('authcode decode should be right1', function () {
+            assert.equal(d2, Kdata.strHello)
+        });
+        let [d3, e3] = Kencr.authcode(str2, key, false)
+        it('authcode decode should be right2', function () {
+            assert.equal(d3, Kdata.strHelloEmoji)
+        });
+        let [d4, e4] = Kencr.authcode(str3, key.substring(0, 16), false)
+        it('authcode decode should be right3', function () {
+            assert.equal(d4, Kdata.strJson)
+        });
+
     });
 
     describe('#easyEncryptDecrypt', function () {

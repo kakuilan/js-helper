@@ -1,6 +1,9 @@
 //测试数据
 
 const strHello = "Hello World! 你好，世界！"
+const strHelloEmoji = "Hello World! 你好，世界！안녕, 세계！ Olá mundo,With Emojis:😃🐳📜💯⌚"
+const strJson = `{"id":9999,"url":"https://baidu.com"}`
+const strEmptyMd5 = "d41d8cd98f00b204e9800998ecf8427e"
 const strChinese = "中文"
 const helloEng = "hello world!"
 const helloWidth = "ｈｅｌｌｏ　ｗｏｒｌｄ！"
@@ -22,6 +25,9 @@ const ip01 = "192.168.31.197"
 
 export default {
     strHello,
+    strHelloEmoji,
+    strJson,
+    strEmptyMd5,
     strChinese,
     helloEng,
     helloWidth,
