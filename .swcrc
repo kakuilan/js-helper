@@ -1,0 +1,17 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    },
+    "minify":{
+        "compress": true,
+        "toplevel": true
+    },
+    "target": "es2022"
+  },
+  "module": {
+    "type": "es6"
+  },
+  "sourceMaps": true,
+  "minify": true
+}

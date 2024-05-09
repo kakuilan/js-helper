@@ -1,39 +1,38 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-/dist
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
 # Logs
 logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-.git/
+# Dependencies
+node_modules/
+
+# JetBrains IDEs
 .idea/
+.hbuilderx/
 .project/
 .settings/
 .vscode/
 
-package-lock.json
-yarn.lock
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Misc
+.DS_Store
+
+# Transpiled files
+build/
+
+# .env you know
+.env
+
+# .vscode
+.vscode/
+
+# .swc
+.swc/
+
+# dist
+dist/
