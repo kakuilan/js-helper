@@ -20,3 +20,5 @@ let d = Kencrypt.md5('123456');
 ```
 
 ### other
+
+- version 1.0.0
