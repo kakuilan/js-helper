@@ -1579,6 +1579,11 @@
     expect "^29.0.0"
     pretty-format "^29.0.0"
 
+"@types/js-md5@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.npmmirror.com/@types/js-md5/-/js-md5-0.7.2.tgz#9766e8763dfbe23d146053535d4a2c06006b49b2"
+  integrity sha512-IwcFIov1JbiEToo3DgrVEwkMUR1BVlVyLjk245AzGHyyOlyddDFIeSIZO+WlhTortOa4P1PdCS8cDrTl7RW1HA==
+
 "@types/json-schema@^7.0.15", "@types/json-schema@^7.0.9":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"

@@ -54,7 +54,7 @@ export function ord(v: string): number {
 
 /**
  * 字符串转[utf8]字节数组.
- * js版本参考 www.npmjs.com/package/utf8-string-bytes
+ * js版本参考 npmjs.com/package/utf8-string-bytes,github.com/hit9/bytes.js
  * ts版本参考 gitlab.com/hmajid2301/utf8-to-bytes
  * @param {string} v
  * @returns {number[]}
