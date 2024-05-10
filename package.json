@@ -63,6 +63,7 @@
     "js-md5": "*",
     "lodash": "~4",
     "qs": "~6",
+    "sprintf-js": "~1",
     "url-parse": "~1"
   },
   "devDependencies": {
@@ -79,6 +80,7 @@
     "@types/lodash": "^4.17.1",
     "@types/node": "^20.12.11",
     "@types/qs": "^6.9.15",
+    "@types/sprintf-js": "^1.1.4",
     "@types/url-parse": "^1.4.11",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
