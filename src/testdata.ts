@@ -23,6 +23,8 @@ const url05 = 'htt//jsowl';
 const url06 = 'www.test.com';
 const url07 = 'ftp://test.com';
 const url08 = 'app://codingbeautydev.com';
+const url09 = 'http://example.net/site/page.php?id=16548';
+const url10 = 'http://example.net/site/page.html#welcome.to.me';
 const file01 = '0000122092815d5d0abc5f4b97d0bdb1b2f4e.jpeg';
 
 const ip01 = '192.168.31.197';
@@ -46,6 +48,8 @@ export default {
   url06,
   url07,
   url08,
+  url09,
+  url10,
   file01,
   ip01,
 };
