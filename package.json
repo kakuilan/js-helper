@@ -1,7 +1,7 @@
 {
   "name": "@kakuilan/js-helper",
   "type": "module",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "author": "kakuilan",
   "license": "MIT",
   "description": "K`s javascript helper/library/utils",
