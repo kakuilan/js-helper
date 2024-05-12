@@ -5,7 +5,7 @@
     },
     "minify":{
         "compress": true,
-        "toplevel": true
+        "mangle": true
     },
     "target": "es2022"
   },
