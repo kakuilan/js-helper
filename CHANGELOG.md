@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/kakuilan/js-helper/compare/v1.0.0...v1.0.1) (2024-05-12)
+
+### Bug Fixes
+
+- 优化打包 ([dcedf06](https://github.com/kakuilan/js-helper/commit/dcedf06286739b8c102a2fd6297c3fac6abbd44d))
+
 # 1.0.0 (2024-05-10)
 
 ### Bug Fixes
