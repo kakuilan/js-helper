@@ -238,9 +238,9 @@ export function isEmpty(v: any): boolean {
  */
 export function isHexCode(c: number): boolean {
   return (
-    (0x30 /* 0 */ <= c && c <= 0x39 /* 9 */) ||
-    (0x41 /* A */ <= c && c <= 0x46 /* F */) ||
-    (0x61 /* a */ <= c && c <= 0x66 /* f */)
+    (0x30 /* 0 */ <= c && c <= 0x39) /* 9 */ ||
+    (0x41 /* A */ <= c && c <= 0x46) /* F */ ||
+    (0x61 /* a */ <= c && c <= 0x66) /* f */
   );
 }
 
@@ -359,6 +359,19 @@ export function inArray(needle: any, haystack: any): boolean {
   return res;
 }
 
+// isJson 检查变量是否JSON字符串.
+export function isJson(text: any): boolean {
+  if (typeof text !== 'string') {
+    return false;
+  }
+  try {
+    JSON.parse(text);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
 export default {
   isString,
   isArray,
@@ -391,4 +404,5 @@ export default {
   objectOf,
   isNaturalNum,
   inArray,
+  isJson,
 };
