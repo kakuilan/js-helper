@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/kakuilan/js-helper/compare/v1.0.1...v1.0.2) (2024-10-12)
+
+### Bug Fixes
+
+- 新增isJson ([7ceb846](https://github.com/kakuilan/js-helper/commit/7ceb8465290995e7fb47f19908f563a5f4f127b4))
+
 ## [1.0.1](https://github.com/kakuilan/js-helper/compare/v1.0.0...v1.0.1) (2024-05-12)
 
 ### Bug Fixes
