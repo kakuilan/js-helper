@@ -1,5 +1,5 @@
 //版本号
-export const VERSION = '0.1.6';
+export const VERSION = '0.1.7';
 
 //未知
 export const UNKNOWN = 'Unknown';
