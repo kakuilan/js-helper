@@ -1,5 +1,4 @@
 import { isArrayLike, isObjectLike } from 'lodash';
-import fnIsBuffer from 'lodash/isBuffer';
 
 import reg from '../regular';
 
@@ -268,7 +267,16 @@ export function isDecCode(c: number): boolean {
  * @returns {boolean}
  */
 export function isBuffer(v: any): boolean {
-  return fnIsBuffer(v);
+  if (typeof Buffer === 'function') {
+    // Node.js 环境：支持 Buffer
+    return v instanceof Buffer;
+  } else {
+    // 浏览器环境：检查是否为 ArrayBuffer 或 TypedArray
+    return (
+        v instanceof ArrayBuffer ||
+        (typeof ArrayBuffer !== 'undefined' && ArrayBuffer.isView(v))
+    );
+  }
 }
 
 /**
